@@ -1,0 +1,90 @@
+body{
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+
+    background-image: url(./Images/BACKGROUND1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* BACKGROUND/STORA BOXEN */
+
+.back{
+    width: 85vw;
+    background-color: rgba(210, 213, 199, 0.5);
+    border-radius: 30px;
+    margin: 15vh auto;
+    padding: 2vw;
+
+    box-sizing: border-box;
+}
+
+/* TITLE */
+
+header > h1{
+    margin: 0;
+    font-size: 8vw;
+    font-family:'Allerta Stencil', sans-serif ;
+    color: rgba(236, 240, 252, 0.8);
+    text-shadow: 10px 10px 10px black;
+    line-height: 0.8;
+}
+
+/* FONT DETALJER */
+
+ul, p, h2, footer{
+    font-family: 'Barlow Condensed';
+    color: rgb(241, 243, 251);
+    font-weight: bold;
+    list-style: none;
+}
+
+/* NAV */
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    font-family: 'Barlow Condensed';
+    margin: 5vw auto;
+}
+
+nav > div{
+    display: flex;
+    justify-content: center;
+    width: 20vw;
+
+    background-color: rgba(208, 211, 220, 0.5);
+    border: solid 1px grey;
+    border-radius: 10px;
+    padding: 1vw 0;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+nav > .unmarked:hover{
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: rgb(241, 243, 251);
+    border: solid 2px rgb(241, 243, 251);
+    box-sizing: border-box;
+}
+
+.marked{
+    background-color: rgba(0, 0, 0, 0.8);
+    color: rgb(254, 254, 254);
+    border: solid 2px rgb(241, 243, 251);
+}
+
+/* IMG */
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+/* BACKGROUND/LILLA BOXEN*/
+
+
+
