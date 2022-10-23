@@ -34,12 +34,36 @@ header > h1{
 
 /* FONT DETALJER */
 
-ul, p, h2, footer{
+ul, p, h2{
     font-family: 'Barlow Condensed';
     color: rgb(241, 243, 251);
     font-weight: bold;
     list-style: none;
+    text-shadow: 10px 10px 15px black;
 }
+
+footer{
+    color: black;
+    font-family: 'Barlow Condensed';
+    font-weight: bold;
+    padding-top: 100px;
+}
+
+.album_data h1 {
+    font-family: 'Allerta Stencil', sans-serif;
+    line-height: 0.8;
+    margin: 0;
+    text-shadow: 10px 10px 15px black;
+} 
+
+.album_data h2 {
+    font-family: 'Barlow Condensed';
+    margin: 0;
+    padding: 2vw 0;
+    text-shadow: 10px 10px 15px black;
+}
+
+
 
 /* NAV */
 
@@ -160,14 +184,103 @@ img{
     margin-bottom: 0;
 }
 
-/* ANECDOTES */
+/* PSYCHIC / ANECDOTES */
 
 .anecdotes {
     grid-column: 1 / span 5;
     display: flex;
+    margin-bottom: 0;
+    padding-left: 0;
+    margin-top: 1vw; 
+    gap: 0.7%; 
+
 }
 
+#psyched .box{
+    display: flex;
+    align-items: center;
+    height: 25vw;
 
+    background-color:rgba(84, 49, 111, 0.8);
+    padding: 1vw;
+    box-sizing: border-box;
+}
 
+#psyched .image_box{
+    display: flex;
+    justify-content: center;
 
+    background-image: url(images/nico1.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 0 20px 20px 20px;
+    padding-bottom: 3vw;
 
+    font-style: italic;
+    font-weight: bold;
+}
+
+#psyched .image{
+    width: 17.5%;
+}
+
+#psyched .top_right_90{
+    width: 17.5%;
+    border-radius: 20px 0 20px 20px;
+}
+#psyched .empty{ width: 17.5%;}
+
+#psyched .bottom_left_90{
+    width: 33.5%;
+    border-radius: 20px 20px 20px 0;
+}
+#psyched .bottom_right_90{
+    width: 17.5%;
+    border-radius: 20px 20px 0 20px;
+}
+
+/* SPIRAL / ANECDOTES */
+
+#spiral .box{
+    display: flex;
+    align-items: center;
+    height: 25vw;
+
+    background-color: rgba(68, 87, 61, 0.8);
+    padding: 1vw;
+    box-sizing: border-box;
+    
+   
+}
+
+#spiral .image_box{
+    display: flex;
+    justify-content: center;
+
+    background-image: url(images/Dave-Harrington.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 0 20px 20px 20px;
+    padding-bottom: 3vw;
+
+    font-style: italic;
+    font-weight: bold;
+}
+#spiral .image {width: 33%;}
+
+#spiral .bottom_left_90 {
+    width: 33%;
+    border-radius: 20px 20px 20px 0px;
+}
+#spiral .bottom_right_90 {
+    width: 17.5%;
+    border-radius: 20px 20px 0 20px;
+}
+
+#spiral .top_left_90 {
+    width: 17.5%;
+    border-radius: 20px 0 20px 20px;
+}
+
+#spiral .tablet_empty_1 {display: none;}
+#spiral .tablet_empty_2 {display: none;}
