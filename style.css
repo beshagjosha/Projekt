@@ -84,7 +84,90 @@ img{
     height: 100%;
 }
 
-/* BACKGROUND/LILLA BOXEN*/
+/* BACKGROUND/LILLA BOXEN */
+
+.album{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    background-color: rgba(54, 71, 88, 0.5);
+    padding: 4vw;
+    border-radius: 30px;
+    margin-bottom: 2vw;
+    box-sizing: border-box;
+    border: solid 1px rgb(241, 243, 251);
+}
+
+/* ALBUM DATA */
+
+.album_data{
+    grid-column: 1 / span 3;
+    grid-row: 1 / span  3;
+}
+
+/* COVER & SONG LIST */
+
+.cover{
+    grid-column: 4 / span 2;
+    position: relative;
+   
+}
+
+.show_not_hover{
+    position: absolute;
+    right: 0;
+    border-radius: 20px 20px 0 0;
+    transition-duration: 0.8s;
+
+}
+
+.show_hover{
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+
+}
+
+.show_not_hover:hover{
+    opacity: 0;
+    transition-property: opacity;
+    transition-duration: 1s;
+}
+
+.song_list{
+    display: flex;
+    grid-column: 4 / span 2;
+    gap: 1vw;
+}
+
+.song_list > div {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    background-color: rgba(54, 71, 88, 0.8);
+    margin-top: 0.8vw;
+    border-radius: 0 0 0 20px;
+}
+
+.song_list > div:nth-child(2){border-radius: 0 0 20px 0;} 
+
+.song_list > div >ul{
+    margin: 0;
+    list-style: decimal;
+}
+
+.song_list > div > h2{
+    margin-left: 1.5vw;
+    margin-bottom: 0;
+}
+
+/* ANECDOTES */
+
+.anecdotes {
+    grid-column: 1 / span 5;
+    display: flex;
+}
+
+
 
 
 
