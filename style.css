@@ -113,11 +113,12 @@ img{
 .album{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    background-color: rgba(54, 71, 88, 0.5);
     padding: 4vw;
-    border-radius: 30px;
     margin-bottom: 2vw;
     box-sizing: border-box;
+    border-radius: 30px;
+
+    background-color: rgba(54, 71, 88, 0.5);
     border: solid 1px rgb(241, 243, 251);
 }
 
@@ -126,6 +127,7 @@ img{
 .album_data{
     grid-column: 1 / span 3;
     grid-row: 1 / span  3;
+    padding-right: 1vw;
 }
 
 /* COVER & SONG LIST */
@@ -284,3 +286,36 @@ img{
 
 #spiral .tablet_empty_1 {display: none;}
 #spiral .tablet_empty_2 {display: none;}
+
+/* FONT-SIZES DESKTOP VIEW: */
+
+@media (min-width: 1111px) {
+    header >  h1{font-size: 88.8px;}
+    nav > div {font-size: 22.2px;}
+    .album_data h1,
+    .album_data h2{
+        font-size: 33.3px;
+    }
+    p, h2, ul, footer{font-size: 16.65px;}
+}
+
+@media (max-width:  1111px) and (min-width: 900px) {
+    header >  h1{font-size: 8vw;}
+    nav > div {font-size: 2vw;}
+    .album_data h1,
+    .album_data h2{
+        font-size: 3vw;
+    }
+    p, h2, ul, footer{font-size: 1.5vw;}
+}
+
+@media (max-width: 900px) and (min-width: 800px) {
+    header > h1 {font-size: 72.05px;}
+    nav > div {font-size:18px;}
+    .album_data h1,
+    .album_data h2 {
+        font-size: 27px;} 
+    p, h2, ul, footer{font-size: 13.5px;}
+}
+
+/* RESPONSIV TABLET MODE */
