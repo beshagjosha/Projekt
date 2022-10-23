@@ -15,7 +15,7 @@ body{
     width: 85vw;
     background-color: rgba(210, 213, 199, 0.5);
     border-radius: 30px;
-    margin: 15vh auto;
+    margin: 20vh auto;
     padding: 2vw;
 
     box-sizing: border-box;
@@ -54,13 +54,13 @@ footer{
     line-height: 0.8;
     margin: 0;
     text-shadow: 10px 10px 15px black;
+
 } 
 
 .album_data h2 {
     font-family: 'Barlow Condensed';
     margin: 0;
     padding: 2vw 0;
-    text-shadow: 10px 10px 15px black;
 }
 
 
@@ -177,7 +177,7 @@ img{
 .song_list > div:nth-child(2){border-radius: 0 0 20px 0;} 
 
 .song_list > div >ul{
-    margin: 0;
+    margin-top: 0;
     list-style: decimal;
 }
 
@@ -194,7 +194,7 @@ img{
     margin-bottom: 0;
     padding-left: 0;
     margin-top: 1vw; 
-    gap: 0.7%; 
+    gap: 1%; 
 
 }
 
@@ -290,32 +290,274 @@ img{
 /* FONT-SIZES DESKTOP VIEW: */
 
 @media (min-width: 1111px) {
-    header >  h1{font-size: 88.8px;}
+    header > h1 {font-size: 88.8167px;}
     nav > div {font-size: 22.2px;}
     .album_data h1,
-    .album_data h2{
-        font-size: 33.3px;
-    }
+    .album_data h2 {font-size: 33.3px;}
     p, h2, ul, footer{font-size: 16.65px;}
 }
-
-@media (max-width:  1111px) and (min-width: 900px) {
-    header >  h1{font-size: 8vw;}
+@media (max-width: 1111px) and (min-width:900px) {
+    header > h1 {font-size: 8vw;}
     nav > div {font-size: 2vw;}
     .album_data h1,
-    .album_data h2{
-        font-size: 3vw;
-    }
+    .album_data h2 {font-size: 3vw;}
     p, h2, ul, footer{font-size: 1.5vw;}
 }
-
-@media (max-width: 900px) and (min-width: 800px) {
+@media (max-width: 900px) and (min-width: 800px){
     header > h1 {font-size: 72.05px;}
-    nav > div {font-size:18px;}
+    nav > div {font-size: 18px;}
     .album_data h1,
-    .album_data h2 {
-        font-size: 27px;} 
+    .album_data h2 {font-size: 27px;}
     p, h2, ul, footer{font-size: 13.5px;}
 }
 
 /* RESPONSIV TABLET MODE */
+
+
+
+@media (max-width: 800px) and (min-width: 500px) {
+    header > h1{text-align: center;}
+
+    header > h1 {font-size: 10vw;}
+    nav > div {font-size: 3vw;}
+    .album_data h1,
+    .album_data h2 {font-size: 4vw;}
+    p, h2, ul, footer{font-size: 2vw;}
+
+    .album {grid-template-columns: repeat(10, 1fr);}
+
+    .cover {
+        grid-column: 1 / span 6;
+        border-radius: 20px 0 0 20px;
+    }
+
+    .show_hover {display: none;}
+    .show_not_hover{border-radius: 20px 0 0 20px;}
+    .show_not_hover:hover {opacity: 1;}
+    
+    .song_list {
+        flex-direction: column;
+        grid-column: 7 / span 4;
+        margin-left: 1.69vw;
+    }
+
+    .song_list > div:nth-child(1){
+        border-radius: 0 20px 0 0;
+        padding-bottom: 3vw;
+    }
+
+    .song_list > div:nth-child(2) {
+        border-radius: 0 0 20px 0;
+        padding-bottom: 3vw;
+    }
+
+    .album_data {
+        grid-column: 1 / span 10;
+        grid-row: 2;
+        margin-top: 5vw;
+    }
+
+    .anecdotes {
+        grid-column: 1 / span 10;
+        flex-wrap: wrap;
+    }
+
+    /* Anecdotes PSYCHED: */
+
+    #psyched .top_right_90 {
+        order: 1;
+        width: 25%;
+    }
+    
+    #psyched .empty {
+        order: 2;
+        width: 25%;
+    }
+    
+    #psyched .bottom_left_90 {
+        order: 3;
+        width: 48%;
+    }
+    
+    #psyched .tablet_empty_1 {
+        order: 4;
+        display: inline;
+        width: 25%;
+    }
+
+    #psyched .image{
+        order: 5;
+        width: 25%;
+    }
+    
+    #psyched .bottom_right_90 {
+        order: 6;
+        width: 23%;
+    }
+
+    #psyched .tablet_empty_2 {
+        order: 7;
+        display: inline;
+        width: 23%;
+    }
+
+    /* Anecdotes SPIRAL */
+
+    #spiral .bottom_left_90 {
+        order: 1;
+        width: 48%;
+    }
+    
+    #spiral .top_left_90 {   
+        order: 2;
+        width: 25%;
+    }
+    
+    #spiral .tablet_empty_1 {
+        order: 3;
+        display: inline;
+        width: 25%;
+    }
+    
+    #spiral .tablet_empty_2 {
+        order: 4;
+        display: inline;
+        width: 25%;
+    }
+
+    #spiral .image {
+        order: 5;
+        width: 48%;
+    }
+    
+    #spiral .bottom_right_90 {
+        order: 6;
+        width: 25%;
+    }
+    
+}
+
+    /* RESPONSIVE PHONE MODE */
+
+    @media (max-width: 500px) {
+        .back {
+            width: 100vw;
+            margin: 0;
+            border-radius: 0;
+
+        }
+        
+        header > h1 {
+            font-size: 12vw;
+            text-align: center;
+            margin-top: 5vw;
+        }
+
+        .album {grid-template-columns: repeat(3, 1fr);}
+
+        nav > div {font-size: 4vw;}
+        .album_data h1,
+        .album_data h2 {font-size: 6vw;}
+        p, h2, ul, footer{font-size: 3.5vw;}
+
+        .cover {
+            grid-column: 1 / span 3;
+            background-color: rgba(0, 0, 0, 0);
+        }
+
+
+        .show_not_hover:hover {opacity: 1;}
+        .show_not_hover {border-radius: 20px 20px 0 0;}
+
+        .song_list {
+            grid-column: 1 / span 3;
+            flex-direction: row;
+        }
+
+        .song_list > div:nth-child(1){
+            border-radius: 0 0 0 20px;
+            padding: 3vw;
+        }
+        .song_list > div:nth-child(2) {
+            border-radius: 0 0 20px 0;
+            padding: 3vw;
+        }
+
+        .album_data {
+            grid-row: 3;
+            margin-top: 10vw;
+        }
+
+        .anecdotes {
+            grid-column: 1 / span 3;
+            flex-wrap: wrap;
+        }
+
+        /* Anecdotes PSYCHED: */
+
+        #psyched .box {
+            height: 50vw;
+        }
+
+        #psyched .top_right_90 {
+            order: 1;
+            width: 33%;
+        }
+
+        
+        #psyched .bottom_left_90 {
+            order: 2;
+            width: 65%;
+        }
+
+        #psyched .empty {
+            order: 3;
+            width: 33%;
+        }
+
+        #psyched .image {
+            order: 5;
+            width: 32.5%;
+        }
+        
+        #psyched .bottom_right_90 {
+            order: 6;
+            width: 32.5%;
+        }
+
+        #psyched .tablet_empty_1 {display: none;}
+        #psyched .tablet_empty_2 {display: none;}
+
+        /* Anecdotes SPIRAL: */
+
+        #spiral .box {
+            height: 50vw;
+        }
+
+        #spiral .bottom_left_90 {
+            order: 1;
+            width: 65%;
+        }
+        
+        #spiral .top_left_90 {   
+            order: 2;
+            width: 33%;
+        }
+
+        #spiral .image {
+            order: 5;
+            width: 65%;
+        }
+        
+        #spiral .bottom_right_90 {
+            order: 6;
+            width: 33%;
+        }
+
+        #spiral .tablet_empty_1 {display: none;}
+        #spiral .tablet_empty_2 {display: none;}
+        
+
+
+
+}
